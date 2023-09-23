@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Youtubers of Funtrex smp</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -69,8 +68,8 @@
   <meta name="theme-color" content="#fff" jstcache="0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                    maximum-scale=1.0, user-scalable=no" jstcache="0">
-  <title jstcache="0">imdudeop.github.io</title>
-  <style jstcache="0">
+  <title>imdudeop.github.io</title>
+  <style>
     a {
       color: var(--link-color);
     }
@@ -454,12 +453,6 @@
       }
     }
 
-    /**
-   * Mobile specific styling.
-   * Navigation buttons are anchored to the bottom of the screen.
-   * Details message replaces the top content in its own scrollable area.
-   */
-
     @media (max-width: 420px) {
       .nav-wrapper .secondary-button {
         border: 0;
@@ -470,7 +463,6 @@
       }
     }
 
-    /* Fixed nav. */
     @media (min-width: 240px) and (max-width: 420px) and (min-height: 401px),
     (min-width: 421px) and (min-height: 240px) and (max-height: 560px) {
       body .nav-wrapper {
@@ -619,7 +611,7 @@
       }
     }
 
-    /* Small mobile screens. No fixed nav. */
+   
     @media (max-height: 400px) and (orientation: portrait),
     (max-height: 239px) and (orientation: landscape),
     (max-width: 419px) and (max-height: 399px) {
@@ -667,16 +659,12 @@
     }
   </style>
   <style jstcache="0">
-    /* Copyright 2013 The Chromium Authors
-   * Use of this source code is governed by a BSD-style license that can be
-   * found in the LICENSE file. */
-
-    /* Don't use the main frame div when the error is in a subframe. */
+   
     html[subframe] #main-frame-error {
       display: none;
     }
 
-    /* Don't use the subframe error div when the error is in a main frame. */
+   
     html:not([subframe]) #sub-frame-error {
       display: none;
     }
@@ -709,12 +697,6 @@
     .icon-info {
       content: -webkit-image-set(url(data:image/png;base64,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) 1x,
           url(data:image/png;base64,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) 2x);
-    }
-
-    .icon-offline {
-      content: -webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABlBMVEUAAABTU1OoaSf/AAAAAXRSTlMAQObYZgAAAGxJREFUeF7tyMEJwkAQRuFf5ipMKxYQiJ3Z2nSwrWwBA0+DQZcdxEOueaePp9+dQZFB7GpUcURSVU66yVNFj6LFICatThZB6r/ko/pbRpUgilY0Cbw5sNmb9txGXUKyuH7eV25x39DtJXUNPQGJtWFV+BT/QAAAAABJRU5ErkJggg==) 1x,
-          url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQBAMAAAAVaP+LAAAAGFBMVEUAAABTU1NNTU1TU1NPT09SUlJSUlJTU1O8B7DEAAAAB3RSTlMAoArVKvVgBuEdKgAAAJ1JREFUeF7t1TEOwyAMQNG0Q6/UE+RMXD9d/tC6womIFSL9P+MnAYOXeTIzMzMzMzMzaz8J9Ri6HoITmuHXhISE8nEh9yxDh55aCEUoTGbbQwjqHwIkRAEiIaG0+0AA9VBMaE89Rogeoww936MQrWdBr4GN/z0IAdQ6nQ/FIpRXDwHcA+JIJcQowQAlFUA0MfQpXLlVQfkzR4igS6ENjknm/wiaGhsAAAAASUVORK5CYII=) 2x);
-      position: relative;
     }
 
     .icon-disabled {
@@ -949,31 +931,20 @@
       color: rgb(66, 133, 244);
     }
 
-    /* Hides the "hide" text div when the offline content list is collapsed/hidden
-   * and, alternatively, hides the "show" text div when the offline content list
-   * is expanded/shown.
-   */
     #offline-content-list.list-hidden #offline-content-list-hide-text,
     #offline-content-list:not(.list-hidden) #offline-content-list-show-text {
       display: none;
     }
 
-    /* Controls the animation of the offline content list when it is expanded/shown.
-   */
+    
     #offline-content-suggestions {
-      /* Max-height has to be set for the height animation to work. The chosen value
-     * is a little greater than the maximum height the list will have, when all
-     * suggestions have images, so that it is never clamped. This makes so that
-     * when the actual height is smaller then the animation is not as smooth.
-     */
+    
       max-height: 27em;
       transition: max-height 200ms ease-in, visibility 0s 200ms,
         opacity 200ms 200ms linear;
     }
 
-    /* Controls the animation of the offline content list when it is
-   * collapsed/hidden.
-   */
+   
     #offline-content-list.list-hidden #offline-content-suggestions {
       max-height: 0;
       opacity: 0;
@@ -987,9 +958,7 @@
       width: 110%;
     }
 
-    /* The selectors below adjust the "overflow" of the suggestion cards contents
-   * based on the same screen size based strategy used for the main frame, which
-   * is applied by the `interstitial-wrapper` class. */
+   
     @media (max-width: 420px) {
       #offline-content-list {
         margin-inline-start: -2.5%;
@@ -1180,17 +1149,13 @@
       width: 1.4em;
     }
 
-    /* Controls the animation (and a bit more) of the launch-downloads-home action
-   * button when the offline content list is expanded/shown.
-   */
+   
     #offline-content-list-action {
       text-align: center;
       transition: visibility 0s 200ms, opacity 200ms 200ms linear;
     }
 
-    /* Controls the animation of the launch-downloads-home action button when the
-   * offline content list is collapsed/hidden.
-   */
+   
     #offline-content-list.list-hidden #offline-content-list-action {
       opacity: 0;
       transition: opacity 200ms linear, visibility 0s 200ms;
@@ -1232,7 +1197,7 @@
       display: none;
     }
 
-    /* Don't allow overflow when in a subframe. */
+    
     html[subframe] body {
       overflow: hidden;
     }
@@ -1266,13 +1231,12 @@
       visibility: hidden;
     }
 
-    /* Show details only when hovering. */
+   
     #sub-frame-error:hover #sub-frame-error-details {
       visibility: visible;
     }
 
-    /* If the iframe is too small, always hide the error code. */
-    /* TODO(mmenke): See if overflow: no-display works better, once supported. */
+    
     @media (max-width: 200px),
     (max-height: 95px) {
       #sub-frame-error-details {
@@ -1280,7 +1244,7 @@
       }
     }
 
-    /* Adjust icon for small embedded frames in apps. */
+    
     @media (max-height: 100px) {
       #sub-frame-error .icon-generic {
         height: auto;
@@ -1290,13 +1254,13 @@
       }
     }
 
-    /* details-button is special; it's a <button> element that looks like a link. */
+    
     #details-button {
       box-shadow: none;
       min-width: 0;
     }
 
-    /* Styles for platform dependent separation of controls and details button. */
+   
     .suggested-left>#control-buttons,
     .suggested-right>#details-button {
       float: left;
@@ -1316,7 +1280,7 @@
       float: none;
     }
 
-    /* download-button shows both icon and text. */
+    
     #download-button {
       padding-bottom: 4px;
       padding-top: 4px;
@@ -1347,7 +1311,7 @@
       width: 100%;
     }
 
-    /* Offline page */
+    
     html[dir='rtl'] .runner-container,
     html[dir='rtl'].offline .icon-offline {
       transform: scaleX(-1);
@@ -2298,7 +2262,7 @@
       // Scroll Y threshold at which the game can be activated.
       CANVAS_IN_VIEW_OFFSET: -10,
       CLEAR_TIME: 3000,
-      CLOUD_FREQUENCY: 0.5,
+      CLOUD_FREQUENCY: 0.7,
       FADE_DURATION: 1,
       FLASH_DURATION: 1000,
       GAMEOVER_CLEAR_TIME: 1200,
@@ -2309,7 +2273,7 @@
       MAX_OBSTACLE_LENGTH: 3,
       MAX_OBSTACLE_DUPLICATION: 2,
       RESOURCE_TEMPLATE_ID: 'audio-resources',
-      SPEED: 6,
+      SPEED: 5,
       SPEED_DROP_COEFFICIENT: 3,
       ARCADE_MODE_INITIAL_TOP_POSITION: 35,
       ARCADE_MODE_TOP_POSITION_PERCENT: 0.1,
@@ -2321,7 +2285,7 @@
       AUDIOCUE_PROXIMITY_THRESHOLD_MOBILE_A11Y: 250,
       GAP_COEFFICIENT: 0.6,
       INVERT_DISTANCE: 700,
-      MAX_SPEED: 13,
+      MAX_SPEED: 12,
       MOBILE_SPEED_COEFFICIENT: 1.2,
       SPEED: 6,
     };
@@ -2333,7 +2297,7 @@
       AUDIOCUE_PROXIMITY_THRESHOLD_MOBILE_A11Y: 220,
       GAP_COEFFICIENT: 0.3,
       INVERT_DISTANCE: 350,
-      MAX_SPEED: 9,
+      MAX_SPEED: 13,
       MOBILE_SPEED_COEFFICIENT: 1.5,
       SPEED: 4.2,
     };
@@ -6730,7 +6694,7 @@
     // ]]>
   </script>
 
-  <script>(function () { var s = {}; (function () { var e = {};/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ var f = this || self; var g, k; a: { for (var l = ["CLOSURE_FLAGS"], p = f, q = 0; q < l.length; q++)if (p = p[l[q]], null == p) { k = null; break a } k = p } var r = k && k[610401301]; g = null != r ? r : !1; var t, v = f.navigator; t = v ? v.userAgentData || null : null; function w(d) { return g ? t ? t.brands.some(function (a) { return (a = a.brand) && -1 != a.indexOf(d) }) : !1 : !1 } function x(d) { var a; a: { if (a = f.navigator) if (a = a.userAgent) break a; a = "" } return -1 != a.indexOf(d) }; function y() { return g ? !!t && 0 < t.brands.length : !1 } function z() { return y() ? w("Chromium") : (x("Chrome") || x("CriOS")) && !(y() ? 0 : x("Edge")) || x("Silk") }; !x("Android") || z(); z(); !x("Safari") || z() || (y() ? 0 : x("Coast")) || (y() ? 0 : x("Opera")) || (y() ? 0 : x("Edge")) || (y() ? w("Microsoft Edge") : x("Edg/")) || y() && w("Opera"); var A = /#|$/; function B(d) { var a = d.search(A), b; a: { for (b = 0; 0 <= (b = d.indexOf("fmt", b)) && b < a;) { var c = d.charCodeAt(b - 1); if (38 == c || 63 == c) if (c = d.charCodeAt(b + 3), !c || 61 == c || 38 == c || 35 == c) break a; b += 4 } b = -1 } if (0 > b) return null; c = d.indexOf("&", b); if (0 > c || c > a) c = a; return decodeURIComponent(d.slice(b + 4, -1 !== c ? c : 0).replace(/\+/g, " ")) }; function C(d, a, b) { function c() { --D; if (0 >= D) { var h; (h = d.GooglebQhCsO) || (h = {}); var E = h[a]; E && (delete h[a], (h = E[0]) && h.call && h()) } } for (var D = b.length + 1, u = 0; u < b.length; u++) { var m = B(b[u]), n = null; 1 != m && 2 != m || !(m = d.document.getElementById("goog_conv_iframe")) || m.src || (n = m); n || (n = new Image); n.onload = c; n.src = b[u] } c() } var F = ["ss_"], G = s || f; F[0] in G || "undefined" == typeof G.execScript || G.execScript("var " + F[0]); for (var H; F.length && (H =</script>
+  <script>(function () { var s = {}; (function () { var e = {}; var f = this || self; var g, k; a: { for (var l = ["CLOSURE_FLAGS"], p = f, q = 0; q < l.length; q++)if (p = p[l[q]], null == p) { k = null; break a } k = p } var r = k && k[610401301]; g = null != r ? r : !1; var t, v = f.navigator; t = v ? v.userAgentData || null : null; function w(d) { return g ? t ? t.brands.some(function (a) { return (a = a.brand) && -1 != a.indexOf(d) }) : !1 : !1 } function x(d) { var a; a: { if (a = f.navigator) if (a = a.userAgent) break a; a = "" } return -1 != a.indexOf(d) }; function y() { return g ? !!t && 0 < t.brands.length : !1 } function z() { return y() ? w("Chromium") : (x("Chrome") || x("CriOS")) && !(y() ? 0 : x("Edge")) || x("Silk") }; !x("Android") || z(); z(); !x("Safari") || z() || (y() ? 0 : x("Coast")) || (y() ? 0 : x("Opera")) || (y() ? 0 : x("Edge")) || (y() ? w("Microsoft Edge") : x("Edg/")) || y() && w("Opera"); var A = /#|$/; function B(d) { var a = d.search(A), b; a: { for (b = 0; 0 <= (b = d.indexOf("fmt", b)) && b < a;) { var c = d.charCodeAt(b - 1); if (38 == c || 63 == c) if (c = d.charCodeAt(b + 3), !c || 61 == c || 38 == c || 35 == c) break a; b += 4 } b = -1 } if (0 > b) return null; c = d.indexOf("&", b); if (0 > c || c > a) c = a; return decodeURIComponent(d.slice(b + 4, -1 !== c ? c : 0).replace(/\+/g, " ")) }; function C(d, a, b) { function c() { --D; if (0 >= D) { var h; (h = d.GooglebQhCsO) || (h = {}); var E = h[a]; E && (delete h[a], (h = E[0]) && h.call && h()) } } for (var D = b.length + 1, u = 0; u < b.length; u++) { var m = B(b[u]), n = null; 1 != m && 2 != m || !(m = d.document.getElementById("goog_conv_iframe")) || m.src || (n = m); n || (n = new Image); n.onload = c; n.src = b[u] } c() } var F = ["ss_"], G = s || f; F[0] in G || "undefined" == typeof G.execScript || G.execScript("var " + F[0]); for (var H; F.length && (H =</script>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>
