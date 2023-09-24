@@ -44,15 +44,17 @@
               <li jstcache="0"><a class="dropdown-item" href="/Funtrex.github.io/player_complain.html"
                   jstcache="0">Complains about players</a>
               </li>
-              <li jstcache="0">
-                <hr class="dropdown-divider" jstcache="0">
-              </li>
+              
               <li jstcache="0"><a class="dropdown-item" href="/Funtrex.github.io/op_complains.html"
                   jstcache="0">Complains about operators</a>
+                  <li jstcache="0">
+                    <hr class="dropdown-divider" jstcache="0">
+                  </li>
               </li>
               <li jstcache="0"><a class="dropdown-item active" href="/Funtrex.github.io/youtubers.html"
                   jstcache="0">Youtubers</a></li>
-            </ul>
+                  <li><a class="dropdown-item" href="/Funtrex.github.io/gameshome.html">Games</a></li>            
+                </ul>
           </li>
         </ul>
         <form class="d-flex" role="search" jstcache="0">
@@ -611,7 +613,7 @@
       }
     }
 
-   
+
     @media (max-height: 400px) and (orientation: portrait),
     (max-height: 239px) and (orientation: landscape),
     (max-width: 419px) and (max-height: 399px) {
@@ -659,12 +661,11 @@
     }
   </style>
   <style jstcache="0">
-   
     html[subframe] #main-frame-error {
       display: none;
     }
 
-   
+
     html:not([subframe]) #sub-frame-error {
       display: none;
     }
@@ -936,15 +937,15 @@
       display: none;
     }
 
-    
+
     #offline-content-suggestions {
-    
+
       max-height: 27em;
       transition: max-height 200ms ease-in, visibility 0s 200ms,
         opacity 200ms 200ms linear;
     }
 
-   
+
     #offline-content-list.list-hidden #offline-content-suggestions {
       max-height: 0;
       opacity: 0;
@@ -958,7 +959,7 @@
       width: 110%;
     }
 
-   
+
     @media (max-width: 420px) {
       #offline-content-list {
         margin-inline-start: -2.5%;
@@ -1149,13 +1150,13 @@
       width: 1.4em;
     }
 
-   
+
     #offline-content-list-action {
       text-align: center;
       transition: visibility 0s 200ms, opacity 200ms 200ms linear;
     }
 
-   
+
     #offline-content-list.list-hidden #offline-content-list-action {
       opacity: 0;
       transition: opacity 200ms linear, visibility 0s 200ms;
@@ -1197,7 +1198,7 @@
       display: none;
     }
 
-    
+
     html[subframe] body {
       overflow: hidden;
     }
@@ -1231,12 +1232,12 @@
       visibility: hidden;
     }
 
-   
+
     #sub-frame-error:hover #sub-frame-error-details {
       visibility: visible;
     }
 
-    
+
     @media (max-width: 200px),
     (max-height: 95px) {
       #sub-frame-error-details {
@@ -1244,7 +1245,7 @@
       }
     }
 
-    
+
     @media (max-height: 100px) {
       #sub-frame-error .icon-generic {
         height: auto;
@@ -1254,13 +1255,13 @@
       }
     }
 
-    
+
     #details-button {
       box-shadow: none;
       min-width: 0;
     }
 
-   
+
     .suggested-left>#control-buttons,
     .suggested-right>#details-button {
       float: left;
@@ -1280,7 +1281,7 @@
       float: none;
     }
 
-    
+
     #download-button {
       padding-bottom: 4px;
       padding-top: 4px;
@@ -1311,7 +1312,7 @@
       width: 100%;
     }
 
-    
+
     html[dir='rtl'] .runner-container,
     html[dir='rtl'].offline .icon-offline {
       transform: scaleX(-1);
@@ -6379,7 +6380,7 @@
             height: 35,
             yPos: 105,
             multipleSpeed: 4,
-            minGap: 120,
+            minGap: 100,
             minSpeed: 0,
             collisionBoxes: [
               new CollisionBox(0, 7, 5, 27),
@@ -6393,7 +6394,7 @@
             height: 50,
             yPos: 90,
             multipleSpeed: 7,
-            minGap: 120,
+            minGap: 110,
             minSpeed: 0,
             collisionBoxes: [
               new CollisionBox(0, 12, 7, 38),
@@ -6457,7 +6458,12 @@
       <div class="icon icon-offline" jstcache="0" style="visibility: hidden;"></div>
       <div id="main-message" jstcache="0">
         <h1 jstcache="0">
-          <h1><font color="black" size="7" face="algerian"><b><center>Dino game</h1></center></font></b>
+          <h1>
+            <font color="black" size="7" face="algerian"><b>
+                <center>Dino game
+          </h1>
+          </center>
+          </font></b>
           <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup();" jstcache="0"></a>
         </h1>
         <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="1">No internet</p>
@@ -6559,8 +6565,8 @@
         jstcache="0"></span></label>
     <div role="application" tabindex="0" title="Jump!" class="runner-container" style="width: 552px; height: 150px;">
       <canvas class="runner-canvas" width="552" height="150" style="width: 552px; height: 150px;"></canvas><span
-        class="offline-runner-live-region" aria-live="assertive">Game started.</span></div><label
-      class="slow-speed-option">Start slower<input type="checkbox" title="Start slower" tabindex="0"
+        class="offline-runner-live-region" aria-live="assertive">Game started.</span>
+    </div><label class="slow-speed-option">Start slower<input type="checkbox" title="Start slower" tabindex="0"
         checked="checked"><span class="slow-speed-toggle"></span></label>
   </div>
   <div id="sub-frame-error" jstcache="0">
@@ -6687,7 +6693,7 @@
           sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
         }
       })();
-    }
+    } 
     else {
       console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
     }
